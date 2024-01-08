@@ -80,7 +80,7 @@ window.onscroll = function () {
         mobilePagination.style.opacity = 1;
       }, 100);
 
-      lastScrollTop = st <= 0 ? 0 : st;
+      // lastScrollTop = st <= 0 ? 0 : st;
 
       if (timer !== null) {
         clearTimeout(timer);
@@ -320,6 +320,7 @@ if (popupTriggers.length) {
           if (detectMob()) {
             openPopup(dataPopup);
           } else {
+            console.log('hi');
             openPopup("popup-quick-view-web");
           }
         } else {

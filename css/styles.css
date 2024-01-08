@@ -11835,7 +11835,7 @@ input[type="number"] {
   position: relative;
   overflow: hidden;
   /* width: 19.75rem; */
-  height: 29.563rem;
+  /* height: 29.563rem; */
 }
 .product__top__image {
   width: 100%;
@@ -23805,6 +23805,17 @@ fieldset:disabled .btn {
   font-weight: 500;
   font-style: italic;
 }
+
+.button-gradient.non-italic span {
+  font-family: IBM Plex Sans;
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0.06em;
+text-align: center;
+font-style:normal;
+}
+
 .button-gradient::after {
   content: "";
   position: absolute;
@@ -24610,7 +24621,7 @@ fieldset:disabled .btn {
   display: grid;
   grid-template-columns: calc(50% - 0.125rem) calc(50% - 0.125rem);
   margin-top: 1rem;
-  padding: 0.25rem;
+  /* padding: 0.25rem; */
   /* grid-row-gap: 1.25rem;
   grid-column-gap: 0.25rem; */
 }
@@ -31283,6 +31294,10 @@ input:checked + .slider .on svg rect {
   .showroom-swiper {
     padding: 0 6.5rem;
   }
+  .showroom-swiper li:hover img {
+    transform: scale(1.1);
+    box-shadow: 0px 31.6235px 27.1059px rgba(0, 0, 0, 0.12);
+  }
 }
 @media (min-width: 1600px) {
   .showroom-swiper {
@@ -31343,8 +31358,8 @@ input:checked + .slider .on svg rect {
 }
 .home-showrooms__locations li .product__overlay {
   content: "";
-  left: 0;
-  right: 0;
+  left: 10px;
+  right: 10px;
   bottom: -2rem;
   transition: ease-in-out 0.5s;
   position: absolute;
@@ -31360,7 +31375,14 @@ input:checked + .slider .on svg rect {
   height: 17.5rem;
   object-fit: cover;
 }
+
+.hidden-xs{
+  display: none;
+}
 @media (min-width: 768px) {
+  .hidden-xs{
+    display: block;
+  }
   .home-showrooms__locations li img {
     width: 20rem;
     height: 20rem;
@@ -35758,7 +35780,8 @@ input:checked + .slider .on svg rect {
   width: 2.5rem;
   height: auto;
 }
-.book__appointment__mode__footer {
+.book__appointment__mode__footer,
+.booked__appointment__mode__footer {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -35772,22 +35795,29 @@ input:checked + .slider .on svg rect {
   grid-gap: 0.5rem;
 }
 .book__appointment__mode__footer a,
-.book__appointment__mode__footer button {
+.book__appointment__mode__footer button,
+.booked__appointment__mode__footer a,
+.booked__appointment__mode__footer button {
   height: 40px;
 }
-.book__appointment__mode__footer .button-gradient {
+.book__appointment__mode__footer .button-gradient,
+.booked__appointment__mode__footer .button-gradient {
   flex: 1;
   padding: 0.75rem 2.25rem;
 }
 @media (min-width: 768px) {
-  .book__appointment__mode__footer {
+  .book__appointment__mode__footer,
+  .booked__appointment__mode__footer {
     padding: 1.25rem 4rem;
   }
   .book__appointment__mode__footer a,
-  .book__appointment__mode__footer button {
+  .book__appointment__mode__footer button,
+  .booked__appointment__mode__footer a,
+  .booked__appointment__mode__footer button {
     height: 48px;
   }
-  .book__appointment__mode__footer .button-gradient {
+  .book__appointment__mode__footer .button-gradient,
+  .booked__appointment__mode__footer .button-gradient {
     padding: 0.9375rem 2.4375rem;
   }
 }
@@ -35814,9 +35844,12 @@ input:checked + .slider .on svg rect {
 }
 .book__appointment__boxes {
   margin-top: 2.25rem;
-  padding: 0 1rem 7.5rem;
+  /* padding: 0 1rem 7.5rem; */
   overflow-y: scroll;
   height: 450px;
+}
+.popup-container-padding{
+  padding: 0 1rem 7.5rem;
 }
 .book__appointment__boxes:last-child {
   display: flex;
@@ -35825,14 +35858,21 @@ input:checked + .slider .on svg rect {
 }
 @media (min-width: 768px) {
   .book__appointment__boxes:last-child {
+    /* padding-bottom: 6.5rem; */
+  }
+  .popup-container-padding{
     padding-bottom: 6.5rem;
   }
+  
 }
 @media (min-width: 768px) {
   .book__appointment__boxes {
     margin: 0;
-    padding: 4rem 4rem 12.5rem;
+    /* padding: 4rem 4rem 12.5rem; */
     height: 100%;
+  }
+  .popup-container-padding{
+    padding: 4rem 4rem 12.5rem;
   }
 }
 .book__appointment__step {
@@ -36157,10 +36197,15 @@ input:checked + .slider .on svg rect {
     font-size: 0.875rem;
   }
 }
-.appointment__months__timing ul li.active a {
+.appointment__months__timing ul li.active{
   background: linear-gradient(95.29deg, #f29eb6 -6.72%, #e6116d 98.84%);
-  border: 1px solid rgba(230, 230, 230, 0.4);
-  box-shadow: 0.25rem 0.8125rem 1.0625rem rgba(230, 17, 109, 0.13);
+  border-radius: 8px;
+}
+.appointment__months__timing ul li.active a {
+    background: transparent;
+    border: 1px solid rgba(230, 230, 230, 0.4);
+    box-shadow: 0.25rem 0.8125rem 1.0625rem rgba(230, 17, 109, 0.13);
+    width: 100%;
 }
 .appointment__months__timing ul li.active a h3,
 .appointment__months__timing ul li.active a .h3 {
@@ -36513,7 +36558,7 @@ input:checked + .slider .on svg rect {
   }
 }
 .book__appointment__gifting {
-  padding: 1.5rem 0;
+  /* padding: 1.5rem 0; */
 }
 @media (min-width: 768px) {
   .book__appointment__gifting {
@@ -36889,7 +36934,7 @@ input:checked + .slider .on svg rect {
 }
 .book__appointment__boxes {
   margin-top: 2.25rem;
-  padding: 0 1rem 7.5rem;
+  /* padding: 0 1rem 7.5rem; */
   overflow-y: scroll;
   height: 450px;
 }
@@ -36900,13 +36945,13 @@ input:checked + .slider .on svg rect {
 }
 @media (min-width: 768px) {
   .book__appointment__boxes:last-child {
-    padding-bottom: 6.5rem;
+    /* padding-bottom: 6.5rem; */
   }
 }
 @media (min-width: 768px) {
   .book__appointment__boxes {
     margin: 0;
-    padding: 0rem 4rem 12.5rem;
+    /* padding: 0rem 4rem 12.5rem; */
     height: 100%;
   }
 }
@@ -37234,7 +37279,8 @@ input:checked + .slider .on svg rect {
   }
 }
 .appointment__months__timing ul li.active a {
-  background: linear-gradient(95.29deg, #f29eb6 -6.72%, #e6116d 98.84%);
+  background: transparent;
+  /* background: linear-gradient(95.29deg, #f29eb6 -6.72%, #e6116d 98.84%); */
   border: 1px solid rgba(230, 230, 230, 0.4);
   box-shadow: 0.25rem 0.8125rem 1.0625rem rgba(230, 17, 109, 0.13);
 }
@@ -37534,6 +37580,9 @@ input:checked + .slider .on svg rect {
     width: 10.875rem;
     height: 10.875rem;
   }
+}
+.confirm__appointment__text {
+  margin-bottom: 28px;
 }
 .confirm__appointment__text h3,
 .confirm__appointment__text .h3 {
@@ -46971,7 +47020,7 @@ body.searchOpen .navigation .navigation__right > ul > li > a > i {
 }
 @media screen and (min-width: 768px) {
   .gifting-banner .swiper-slide img {
-    max-height: 750px;
+    /* max-height: 750px; */
   }
 }
 .pdp-related__container__gifting {
@@ -47022,7 +47071,7 @@ body.searchOpen .navigation .navigation__right > ul > li > a > i {
 }
 .scroll-icon {
   position: absolute;
-  top: 604px;
+  bottom: 68px;
   left: 48%;
 }
 @media screen and (max-width: 768px) {
@@ -47069,8 +47118,8 @@ body.searchOpen .navigation .navigation__right > ul > li > a > i {
   border-radius: 12px 2px 12px 2px;
 }
 .exquisite .swiper-wrapper-exquisite {
-  max-width: 1440px;
-  margin: 0 auto;
+  /* max-width: 1440px; */
+  /* margin: 0 auto; */
 }
 .exquisite .catalog__products__list {
   display: block;
@@ -47079,7 +47128,8 @@ body.searchOpen .navigation .navigation__right > ul > li > a > i {
 @media screen and (max-width: 768px) {
   .exquisite .catalog__products__list {
     padding-left: 0;
-    margin-bottom: 62px;
+    /* margin-left: 16px; */
+    /* margin-bottom: 62px; */
   }
 }
 .exquisite .product_bottom__margin {
@@ -47089,7 +47139,10 @@ body.searchOpen .navigation .navigation__right > ul > li > a > i {
   width: auto;
 }
 .exquisite .a-left {
-  display: none !important;
+  /* display: none !important; */
+  position: absolute;
+  top: 36%;
+  left: -68px;
 }
 .exquisite h3,
 .exquisite .h3 {
@@ -47115,13 +47168,16 @@ body.searchOpen .navigation .navigation__right > ul > li > a > i {
 }
 @media screen and (max-width: 768px) {
   .exquisite .product {
-    max-width: 192px;
+    /* max-width: 173px; */
     margin-bottom: 0 !important;
+    /* height: 316px; */
+    height: auto;
+    margin: 0 6px;
   }
 }
 @media screen and (max-width: 375px) {
   .exquisite .product {
-    max-width: 174px;
+    /* max-width: 173px; */
   }
 }
 @media screen and (min-width: 768px) {
@@ -47803,7 +47859,7 @@ body.searchOpen .navigation .navigation__right > ul > li > a > i {
   font-family: IBM Plex Sans !important;
 }
 .budget .showroom-swiper {
-  padding: 0 10rem;
+  /* padding: 0 10rem; */
 }
 @media screen and (max-width: 1400px) {
   .budget .showroom-swiper {
@@ -47815,7 +47871,8 @@ body.searchOpen .navigation .navigation__right > ul > li > a > i {
     padding: 0;
   }
   .budget .showroom-swiper .slick-center .home-locations__top {
-    margin-left: 0;
+    /* margin-left: 0; */
+    margin-left: 10px;
   }
   .budget .showroom-swiper .slick-center .product__overlay {
     opacity: 1;
@@ -47920,8 +47977,9 @@ body.searchOpen .navigation .navigation__right > ul > li > a > i {
   .budget .showroom-swiper img {
     max-width: 90%;
     margin: 0 auto;
+    
   }
-  .budget .showroom-swiper li.slick-center img {
+  .budget .showroom-swiper .slick-current img {
     transform: scale(1.1);
     filter: drop-shadow(9px 20px 13px rgba(121, 76, 35, 0.35));
   }
@@ -48800,11 +48858,11 @@ body.searchOpen .navigation .navigation__right > ul > li > a > i {
   }
 }
 .visit-store-mobile {
-  display: none;
+  /* display: none; */
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 361px) {
   .visit-store-mobile {
-    display: block;
+    display: none;
   }
 }
 .prod-title {
@@ -48877,3 +48935,59 @@ body.searchOpen .navigation .navigation__right > ul > li > a > i {
   box-shadow: 0 84px 120px -72px rgba(104, 75, 48, 0.84);
   border-radius: 40px 0 29px 0;
 } 
+
+
+
+
+/*  */
+.new-budget .gift-entry .gift-img-container{
+  width: 420px;
+  height: 420px;
+}
+.new-budget .gift-entry img{
+  width: 100%;
+  border-radius: 40px 0;
+  max-width: 100%;
+  /* width: 389px;
+  height: 389px; */
+  transition: all ease-in-out 0.5s;
+}
+.new-budget .gift-entry:hover img{
+  /* width: 420px;
+  height: 420px; */
+  scale: 1.1;
+}
+
+
+/* form */
+.form-divider{
+  border-top: 1px solid #ddd;
+    width: 100%;
+}
+.appointment__preview__form{
+  width: 100%;
+  /* padding-top: 56px; */
+  /* border-top: 1px solid #ddd; */
+}
+.appointment__preview__form label{
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.appointment__preview__form select,
+.appointment__preview__form textarea {
+  width: 100%;
+  border: 1px solid #d5d5d5;
+  border-radius: 4px;
+  padding: 0.8125rem 1.25rem;
+}
+.confirm__appointment__img {
+  margin-top: 50px;
+}
+
+select {
+  background: #fff url("../images/gifting//Users/soham/Downloads/arrow-down.svg") no-repeat right .75rem center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
