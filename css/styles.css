@@ -47977,7 +47977,9 @@ body.searchOpen .navigation .navigation__right > ul > li > a > i {
   .budget .showroom-swiper img {
     max-width: 90%;
     margin: 0 auto;
-    
+    transition: transform 2s;
+      /* transition: all 0.5s; */
+    /* sadasdk; */
   }
   .budget .showroom-swiper .slick-current img {
     transform: scale(1.1);
@@ -48990,4 +48992,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+.celebrating-slick-enty img{
+max-width: 100%;
 }
