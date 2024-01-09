@@ -23783,7 +23783,7 @@ fieldset:disabled .btn {
 .button-find {
   font-family: IBM Plex Sans;
   color: white;
-  width: 400px;
+  /* width: 400px; */
   height: 70px;
   background-color: rgba(255, 255, 255, 0.4);
   display: flex;
@@ -28996,6 +28996,7 @@ input:checked + .slider .on svg rect {
 .quote-icon {
   text-align: center !important;
   margin-bottom: 18px;
+  display: none;
 }
 .home__header--small .testimonial-desc {
   font-size: 56px;
@@ -29003,6 +29004,9 @@ input:checked + .slider .on svg rect {
   line-height: 67px;
 }
 @media (max-width: 767.98px) {
+  .quote-icon{
+    display: block;
+  }
   .home__header--small h2,
   .home__header--small .h2 {
     font-size: 2rem;
@@ -35872,7 +35876,7 @@ input:checked + .slider .on svg rect {
     height: 100%;
   }
   .popup-container-padding{
-    padding: 4rem 4rem 12.5rem;
+    padding: 32px 64px 12.5rem;
   }
 }
 .book__appointment__step {
@@ -36794,7 +36798,7 @@ input:checked + .slider .on svg rect {
   }
 }
 .book__appointment__mode__title__gifting {
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 .book__appointment__mode__title__gifting h6,
 .book__appointment__mode__title__gifting .h6 {
@@ -36930,6 +36934,7 @@ input:checked + .slider .on svg rect {
 @media (min-width: 768px) {
   .close-button {
     padding: 0.9375rem 2rem;
+    width: 121px;
   }
 }
 .book__appointment__boxes {
@@ -47615,11 +47620,29 @@ body.searchOpen .navigation .navigation__right > ul > li > a > i {
 .empower .button-gradient {
   display: inline-block;
 }
+.empower .button-gradient span i{
+  
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
 .empower .button-gradient span {
   font-size: 14px;
   margin-right: 12px;
   font-style: normal !important;
   font-family: "IBM Plex Sans";
+
+  
+
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0.06em;
+text-align: left;
+
 }
 @media screen and (min-width: 786px) {
   .empower .text-section {
