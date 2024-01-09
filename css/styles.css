@@ -36044,7 +36044,7 @@ input:checked + .slider .on svg rect {
   border: 1px solid rgba(230, 230, 230, 0.4);
   box-shadow: 1px 0.5rem 1.0625rem rgba(0, 0, 0, 0.04);
   border-radius: 0.5rem;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   padding: 1.25rem 0 1.5rem 0;
 }
 .appointment__months h4,
@@ -37089,7 +37089,7 @@ input:checked + .slider .on svg rect {
   display: flex;
   align-items: flex-start;
   grid-gap: 0.5rem;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 .book__appointment__step__title__gifting h6,
 .book__appointment__step__title__gifting .h6 {
@@ -37126,7 +37126,7 @@ input:checked + .slider .on svg rect {
   border: 1px solid rgba(230, 230, 230, 0.4);
   box-shadow: 1px 0.5rem 1.0625rem rgba(0, 0, 0, 0.04);
   border-radius: 0.5rem;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   padding: 1.25rem 0 1.5rem 0;
 }
 .appointment__months h4,
