@@ -26698,7 +26698,8 @@ body.searchOpen .navigation .navigation__right a svg circle {
   position: absolute;
   left: 0;
   width: 100%;
-  max-height: 70vh;
+  /* max-height: 70vh; */
+  height: 90vh;
   transition: all ease 0.5s;
   bottom: -100vh;
 }
@@ -36138,6 +36139,7 @@ input:checked + .slider .on svg rect {
 @media (min-width: 768px) {
   .appointment__months__timing {
     margin-top: 0.75rem;
+    padding: 0 30px;
   }
 }
 .appointment__months__timing .swiper-wrapper {
@@ -49055,10 +49057,21 @@ select option{color: #555;}
   position: fixed;
   right: 0;
   left: 0;
-  top: 150px;
+  top: 17px;
   text-align: center;
 }
+.close-buttons img{
+  width: 26px;
+  height: 26px;
+}
 @media (min-width: 768px) {
+  .popup-container__content {
+    max-height: 70vh;
+    height: auto;
+  }
+  .date-container{
+    padding: 0 30px;
+  }
   .close-buttons{
     position: fixed;
       right: 996px;
@@ -49066,6 +49079,11 @@ select option{color: #555;}
       left: auto;
       background-color: transparent;
   }
+  .close-buttons img{
+    width: auto;
+    height: auto;
+  }
+  
   
 }
 

@@ -82,7 +82,8 @@ if(bookAppointmentDateSelect.length) {
 
 
         breakpoints: {
-            768:{
+            768: {
+                slidesPerView: 3,
                 navigation: {
                     nextEl: ".swiper-month-next",
                     prevEl: ".swiper-month-prev",
