@@ -64,20 +64,22 @@ function changeStep(step) {
 
 TriggerManager();
 
-const bookAppointmentDateSelect = document.querySelectorAll('.appointment__months__timing ul li')
+const bookAppointmentDateSelect = document.querySelectorAll('.appointment__months__timing .swiper-wrapper .swiper-slide')
 
 if(bookAppointmentDateSelect.length) {
     for (let i = 0; i < bookAppointmentDateSelect.length; i++) {
         bookAppointmentDateSelect[i].querySelector('a').addEventListener('click', function (e){
             e.preventDefault();
-            const activeDate = document.querySelector('.appointment__months__timing ul li.active');
+            const activeDate = document.querySelector('.appointment__months__timing .swiper-wrapper .swiper-slide.active');
             activeDate.classList.remove('active')
             bookAppointmentDateSelect[i].classList.add('active')
         })
     }
 
     new Swiper(".appointment__months__timing", {
-        slidesPerView: 5.6,
+        slidesPerView: 4,
+        // spaceBetween: 30,
+
 
         breakpoints: {
             768:{

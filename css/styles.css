@@ -35876,7 +35876,7 @@ input:checked + .slider .on svg rect {
     height: 100%;
   }
   .popup-container-padding{
-    padding: 32px 64px 12.5rem;
+    padding: 52px 64px 12.5rem;
   }
 }
 .book__appointment__step {
@@ -36140,18 +36140,18 @@ input:checked + .slider .on svg rect {
     margin-top: 0.75rem;
   }
 }
-.appointment__months__timing ul {
-  display: flex;
-  gap: 0.5rem;
-  justify-content: center;
-  padding: 0 0 1.5rem;
-  margin: 0;
-  list-style: none;
+.appointment__months__timing .swiper-wrapper {
+  /* display: flex; */
+  /* gap: 0.5rem; */
+  /* justify-content: center; */
+  /* padding: 0 0 1.5rem; */
+  /* margin: 0; */
+  /* list-style: none; */
 }
-.appointment__months__timing ul::-webkit-scrollbar {
+.appointment__months__timing .swiper-wrapper::-webkit-scrollbar {
   display: none;
 }
-.appointment__months__timing ul li a {
+.appointment__months__timing .swiper-wrapper .swiper-slide a {
   display: block;
   text-decoration: none;
   background: #fff;
@@ -36162,14 +36162,14 @@ input:checked + .slider .on svg rect {
   cursor: pointer;
 }
 @media (min-width: 768px) {
-  .appointment__months__timing ul li a {
+  .appointment__months__timing .swiper-wrapper .swiper-slide a {
     padding: 0.875rem 1.0625rem;
     height: 5rem;
-    width: 4.125rem;
+    /* width: 4.125rem; */
   }
 }
-.appointment__months__timing ul li a h3,
-.appointment__months__timing ul li a .h3 {
+.appointment__months__timing .swiper-wrapper .swiper-slide a h3,
+.appointment__months__timing .swiper-wrapper .swiper-slide a .h3 {
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.4rem;
@@ -36179,13 +36179,13 @@ input:checked + .slider .on svg rect {
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
-  .appointment__months__timing ul li a h3,
-  .appointment__months__timing ul li a .h3 {
+  .appointment__months__timing .swiper-wrapper .swiper-slide a h3,
+  .appointment__months__timing .swiper-wrapper .swiper-slide a .h3 {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
-.appointment__months__timing ul li a p {
+.appointment__months__timing .swiper-wrapper .swiper-slide a p {
   font-weight: 500;
   font-size: 0.75rem;
   line-height: 1.4rem;
@@ -36196,26 +36196,27 @@ input:checked + .slider .on svg rect {
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
-  .appointment__months__timing ul li a p {
+  .appointment__months__timing .swiper-wrapper .swiper-slide a p {
     font-weight: 400;
     font-size: 0.875rem;
   }
 }
-.appointment__months__timing ul li.active{
-  background: linear-gradient(95.29deg, #f29eb6 -6.72%, #e6116d 98.84%);
+.appointment__months__timing .swiper-wrapper .swiper-slide.active{
+  /* background: linear-gradient(95.29deg, #f29eb6 -6.72%, #e6116d 98.84%); */
   border-radius: 8px;
 }
-.appointment__months__timing ul li.active a {
-    background: transparent;
+.appointment__months__timing .swiper-wrapper .swiper-slide.active a {
+    /* background: transparent; */
     border: 1px solid rgba(230, 230, 230, 0.4);
     box-shadow: 0.25rem 0.8125rem 1.0625rem rgba(230, 17, 109, 0.13);
-    width: 100%;
+    background: linear-gradient(95.29deg, #f29eb6 -6.72%, #e6116d 98.84%);
+    /* width: 100%; */
 }
-.appointment__months__timing ul li.active a h3,
-.appointment__months__timing ul li.active a .h3 {
+.appointment__months__timing .swiper-wrapper .swiper-slide.active a h3,
+.appointment__months__timing .swiper-wrapper .swiper-slide.active a .h3 {
   color: #fff;
 }
-.appointment__months__timing ul li.active a p {
+.appointment__months__timing .swiper-wrapper .swiper-slide.active a p {
   color: #fff;
 }
 .appointment__date__slots {
@@ -37222,18 +37223,18 @@ input:checked + .slider .on svg rect {
     margin-top: 0.75rem;
   }
 }
-.appointment__months__timing ul {
-  display: flex;
-  gap: 0.5rem;
-  justify-content: center;
-  padding: 0 0 1.5rem;
-  margin: 0;
-  list-style: none;
+.appointment__months__timing .swiper-wrapper {
+  /* display: flex; */
+  /* gap: 0.5rem; */
+  /* justify-content: center; */
+  /* padding: 0 0 1.5rem; */
+  /* margin: 0; */
+  /* list-style: none; */
 }
-.appointment__months__timing ul::-webkit-scrollbar {
+.appointment__months__timing .swiper-wrapper::-webkit-scrollbar {
   display: none;
 }
-.appointment__months__timing ul li a {
+.appointment__months__timing .swiper-wrapper .swiper-slide a {
   display: block;
   text-decoration: none;
   background: #fff;
@@ -37244,14 +37245,14 @@ input:checked + .slider .on svg rect {
   cursor: pointer;
 }
 @media (min-width: 768px) {
-  .appointment__months__timing ul li a {
+  .appointment__months__timing .swiper-wrapper .swiper-slide a {
     padding: 0.875rem 1.0625rem;
     height: 5rem;
-    width: 4.125rem;
+    /* width: 4.125rem; */
   }
 }
-.appointment__months__timing ul li a h3,
-.appointment__months__timing ul li a .h3 {
+.appointment__months__timing .swiper-wrapper .swiper-slide a h3,
+.appointment__months__timing .swiper-wrapper .swiper-slide a .h3 {
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.4rem;
@@ -37261,13 +37262,13 @@ input:checked + .slider .on svg rect {
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
-  .appointment__months__timing ul li a h3,
-  .appointment__months__timing ul li a .h3 {
+  .appointment__months__timing .swiper-wrapper .swiper-slide a h3,
+  .appointment__months__timing .swiper-wrapper .swiper-slide a .h3 {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
-.appointment__months__timing ul li a p {
+.appointment__months__timing .swiper-wrapper .swiper-slide a p {
   font-weight: 500;
   font-size: 0.75rem;
   line-height: 1.4rem;
@@ -37278,22 +37279,22 @@ input:checked + .slider .on svg rect {
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
-  .appointment__months__timing ul li a p {
+  .appointment__months__timing .swiper-wrapper .swiper-slide a p {
     font-weight: 400;
     font-size: 0.875rem;
   }
 }
-.appointment__months__timing ul li.active a {
+.appointment__months__timing .swiper-wrapper .swiper-slide.active a {
   background: transparent;
-  /* background: linear-gradient(95.29deg, #f29eb6 -6.72%, #e6116d 98.84%); */
+  background: linear-gradient(95.29deg, #f29eb6 -6.72%, #e6116d 98.84%);
   border: 1px solid rgba(230, 230, 230, 0.4);
   box-shadow: 0.25rem 0.8125rem 1.0625rem rgba(230, 17, 109, 0.13);
 }
-.appointment__months__timing ul li.active a h3,
-.appointment__months__timing ul li.active a .h3 {
+.appointment__months__timing .swiper-wrapper .swiper-slide.active a h3,
+.appointment__months__timing .swiper-wrapper .swiper-slide.active a .h3 {
   color: #fff;
 }
-.appointment__months__timing ul li.active a p {
+.appointment__months__timing .swiper-wrapper .swiper-slide.active a p {
   color: #fff;
 }
 .appointment__date__slots {
@@ -37588,6 +37589,8 @@ input:checked + .slider .on svg rect {
 }
 .confirm__appointment__text {
   margin-bottom: 28px;
+  margin-left: 44px;
+  margin-right: 44px;
 }
 .confirm__appointment__text h3,
 .confirm__appointment__text .h3 {
@@ -48682,13 +48685,16 @@ text-align: left;
 .exquisite-swiper .product {
   cursor: pointer;
   margin-bottom: 40px;
+  margin-top: 20px;
 }
 @media screen and (min-width: 768px) {
   .exquisite-swiper .product {
-    margin-right: 36px;
+    margin-right: 18px;
+    margin-left: 18px;
+    padding: 12px;
   }
   .exquisite-swiper .product:hover {
-    box-shadow: 0 0 0 12px #fff, 10px 12px 30px rgba(0, 0, 0, 0.12);
+    box-shadow: 10px 12px 52px 0px #0000001F;
   }
 }
 .exquisite-swiper .product__bottom__price h3,
@@ -48885,7 +48891,7 @@ text-align: left;
 .visit-store-mobile {
   /* display: none; */
 }
-@media screen and (min-width: 361px) {
+@media screen and (min-width: 768px) {
   .visit-store-mobile {
     display: none;
   }
@@ -48994,10 +49000,29 @@ text-align: left;
   /* padding-top: 56px; */
   /* border-top: 1px solid #ddd; */
 }
+.appointment__preview__form>h4{
+  font-family: "brightgrotesk-book-italic";
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:  #E6116D;
+  margin-bottom: 28px;
+  text-align: center;
+}
 .appointment__preview__form label{
   display: block;
   text-align: left;
+  font-family: var(--bs-font-sans-serif);
   margin-bottom: 10px;
+  margin-top: 28px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 .appointment__preview__form select,
 .appointment__preview__form textarea {
@@ -49006,12 +49031,15 @@ text-align: left;
   border-radius: 4px;
   padding: 0.8125rem 1.25rem;
 }
+.appointment__preview__form textarea{
+  height: 184px;
+}
 .confirm__appointment__img {
   margin-top: 50px;
 }
 
 select {
-  background: #fff url("../images/gifting//Users/soham/Downloads/arrow-down.svg") no-repeat right .75rem center;
+  background: #fff url("../images/gifting/arrow-down.svg") no-repeat right .75rem center;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -49019,3 +49047,26 @@ select {
 .celebrating-slick-enty img{
 max-width: 100%;
 }
+.placeholder{color: grey;}
+select option:first-child{color: grey; display: none;}
+select option{color: #555;} 
+
+.close-buttons{
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 150px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .close-buttons{
+    position: fixed;
+      right: 996px;
+      top: 16px;
+      left: auto;
+      background-color: transparent;
+  }
+  
+}
+
+
