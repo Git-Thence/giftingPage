@@ -36520,7 +36520,7 @@ input:checked + .slider .on svg rect {
   margin-bottom: 0;
   color: #2b2b2b;
   font-family: "IBM Plex Serif", sans-serif;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 @media (min-width: 768px) {
   .confirm__appointment__text h3,
@@ -37288,7 +37288,7 @@ input:checked + .slider .on svg rect {
 }
 .appointment__months__timing .swiper-wrapper .swiper-slide.active a {
   background: transparent;
-  background: linear-gradient(95.29deg, #f29eb6 -6.72%, #e6116d 98.84%);
+  /* background: linear-gradient(95.29deg, #f29eb6 -6.72%, #e6116d 98.84%); */
   border: 1px solid rgba(230, 230, 230, 0.4);
   box-shadow: 0.25rem 0.8125rem 1.0625rem rgba(230, 17, 109, 0.13);
 }
@@ -37590,7 +37590,7 @@ input:checked + .slider .on svg rect {
   }
 }
 .confirm__appointment__text {
-  margin-bottom: 28px;
+  margin-bottom: 44px;
   margin-left: 44px;
   margin-right: 44px;
 }
@@ -37603,7 +37603,7 @@ input:checked + .slider .on svg rect {
   margin-bottom: 0;
   color: #2b2b2b;
   font-family: "IBM Plex Serif", sans-serif;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 @media (min-width: 768px) {
   .confirm__appointment__text h3,
@@ -49063,6 +49063,10 @@ select option{color: #555;}
 .close-buttons img{
   width: 26px;
   height: 26px;
+}
+.date-container-entry{
+  background: linear-gradient(95.29deg, #f29eb6 -6.72%, #e6116d 98.84%);
+  border-radius: 8px;
 }
 @media (min-width: 768px) {
   .popup-container__content {
