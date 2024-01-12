@@ -23786,17 +23786,33 @@ fieldset:disabled .btn {
   /* width: 400px; */
   height: 70px;
   background-color: rgba(255, 255, 255, 0.4);
-  display: flex;
-  justify-content: right;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: right; */
+  /* align-items: center; */
   border-radius: 40px;
   backdrop-filter: blur(18.5px);
   text-decoration: none;
+  position: relative;
+}
+.button-find span:nth-child(1){
+  position: absolute;
+  top: 11px;
+  left: 0;
+  right: 0;
+  margin: 0 !important;
+}
+.button-find span:nth-child(2){
+  width: 16px;
+  top: 11px;
+  right: 12px;
+  position: absolute;
+  margin: 0 !important;
 }
 @media (max-width: 768px) {
   .button-find {
     width: 288px;
     height: 39px;
+    font-size: 12px;
   }
 }
 
@@ -23804,11 +23820,12 @@ fieldset:disabled .btn {
   font-family: IBM Plex Serif, sans-serif;
   font-weight: 500;
   font-style: italic;
+  font-size: 12px;
 }
 
 .button-gradient.non-italic span {
   font-family: IBM Plex Sans;
-font-size: 14px;
+font-size: 12px;
 font-weight: 400;
 line-height: 18px;
 letter-spacing: 0.06em;
@@ -24032,6 +24049,9 @@ font-style:normal;
   height: 1.25rem;
 }
 @media (min-width: 768px) {
+  .button-gradient span{
+    font-size: 14px;
+  }
   .button-add-to-cart .text-default {
     height: 2.25rem;
   }
@@ -37130,7 +37150,7 @@ input:checked + .slider .on svg rect {
   box-shadow: 1px 0.5rem 1.0625rem rgba(0, 0, 0, 0.04);
   border-radius: 0.5rem;
   /* margin-top: 1rem; */
-  padding: 1.25rem 0 1.5rem 0;
+  padding: 1.25rem 0 1.5rem 20px;
 }
 .appointment__months h4,
 .appointment__months .h4 {
@@ -47049,7 +47069,7 @@ body.searchOpen .navigation .navigation__right > ul > li > a > i {
 }
 @media screen and (max-width: 768px) {
   .home-rarest.something-everyone {
-    padding: 0 2.18rem 0 2.18rem;
+    padding: 0 16px 0 16px;
   }
 }
 .text-box {
@@ -47330,13 +47350,17 @@ body.searchOpen .navigation .navigation__right > ul > li > a > i {
 }
 @media screen and (max-width: 768px) {
   .offer-banner .right-sec {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
+    position: relative;
+    /* top: 50%;
+    right: 50%; */
+    /* transform: translate(50%, -50%); */
     border-radius: 0px 0px 25.164px 0px;
     box-shadow: rgba(121, 76, 35, 0.84) 0px 10px 1px -20px,
       rgba(121, 76, 35, 0.84) 0px 30px 60px -30px;
+      margin-top: 24px;
+  }
+  .offer-banner .right-sec img{
+    width: 100%;
   }
   .offer-banner .right-sec p {
     color: #fff;
@@ -47356,24 +47380,27 @@ body.searchOpen .navigation .navigation__right > ul > li > a > i {
   }
 }
 .offer-banner .mobile-text {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  z-index: 1;
-  min-width: 264px;
+  /* position: absolute; */
+  /* left: 50%; */
+  /* transform: translate(-50%, 50%); */
+  /* z-index: 1; */
+  /* min-width: 264px; */
+  padding-top: 61px;
 }
 .offer-banner .view-all-mobile {
   position: absolute;
-  bottom: 86px;
+  /* bottom: 86px; */
+  margin-top: 32px;
   right: 50%;
   transform: translate(50%, 0);
 }
 .background-offer {
   position: absolute;
-  top: -45px;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: -1;
 }
 .background-offer img {
   min-width: 100%;
@@ -47406,6 +47433,7 @@ body.searchOpen .navigation .navigation__right > ul > li > a > i {
 }
 .best-offer {
   height: 831px;
+  padding: 0 16px;
 }
 @media screen and (max-width: 768px) {
   .best-offer {
@@ -47465,7 +47493,7 @@ body.searchOpen .navigation .navigation__right > ul > li > a > i {
   .text-offer {
     font-size: 32px;
     text-align: center;
-    width: 273px;
+    /* width: 273px; */
     margin-bottom: 8px;
   }
 }
@@ -47635,14 +47663,13 @@ body.searchOpen .navigation .navigation__right > ul > li > a > i {
   text-align: left;
 }
 .empower .button-gradient span {
-  font-size: 14px;
   margin-right: 12px;
   font-style: normal !important;
   font-family: "IBM Plex Sans";
 
   
 
-font-size: 14px;
+font-size: 12px;
 font-weight: 400;
 line-height: 18px;
 letter-spacing: 0.06em;
@@ -47650,6 +47677,9 @@ text-align: left;
 
 }
 @media screen and (min-width: 786px) {
+  .empower .button-gradient span{
+    font-size: 14px;
+  }
   .empower .text-section {
     top: 349px;
   }
@@ -48199,11 +48229,12 @@ text-align: left;
   border: none;
   padding: 25px 32px;
   min-width: 406px;
+  font-size: 12px;
 }
 @media screen and (max-width: 768px) {
   .your-service .right-sec .form-wrap form input {
     min-width: 288px;
-    padding: 19px 32px;
+    padding: 16px 20px;
   }
 }
 .your-service .right-sec .form-wrap form input:first-child {
@@ -48230,8 +48261,9 @@ text-align: left;
 }
 @media screen and (max-width: 768px) {
   .your-service .right-sec .form-wrap form .search {
-    top: 8px;
+    top: 11px;
     right: 15px;
+    width: 16px;
   }
   .your-service .right-sec .form-wrap form .search img {
     width: 15px;
@@ -48354,18 +48386,19 @@ text-align: left;
   .wishlist {
     height: 640px;
     margin-top: 56px;
+    padding: 0 16px;
   }
   .wishlist .text-top {
     font-size: 12px;
     font-weight: 400;
     font-family: "brightgrotesk-book-italic";
     color: #2f251c;
-    max-width: 256px;
+    /* max-width: 256px; */
     font-style: italic;
     line-height: 16.8px;
   }
   .wishlist .mobile-text {
-    transform: translate(-50%, 8px);
+    /* transform: translate(-50%, 8px); */
   }
 }
 .wishlist .button-gradient span {
@@ -48688,6 +48721,7 @@ text-align: left;
   cursor: pointer;
   margin-bottom: 40px;
   margin-top: 20px;
+  margin: 0 0 0 16px;
 }
 @media screen and (min-width: 768px) {
   .exquisite-swiper .product {
@@ -49064,7 +49098,7 @@ select option{color: #555;}
   width: 26px;
   height: 26px;
 }
-.date-container-entry{
+.appointment__months__timing .swiper-wrapper .swiper-slide.active .date-container-entry{
   background: linear-gradient(95.29deg, #f29eb6 -6.72%, #e6116d 98.84%);
   border-radius: 8px;
 }
