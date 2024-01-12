@@ -47678,7 +47678,7 @@ body.searchOpen .navigation .navigation__right > ul > li > a > i {
 }
 .empower .button-gradient span i{
   
-  font-size: 14px;
+  font-size: 12px;
   font-style: italic;
   font-weight: 500;
   line-height: 18px;
@@ -47705,6 +47705,9 @@ text-align: left;
   }
   .empower .text-section {
     top: 349px;
+  }
+  .empower .button-gradient span i{
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 1500px) {
@@ -47938,7 +47941,7 @@ text-align: left;
 }
 .budget .product__view {
   font-family: IBM Plex Sans !important;
-  font-size: 9px;
+  font-size: 11px;
 }
 .budget .showroom-swiper {
   /* padding: 0 10rem; */
@@ -48261,13 +48264,15 @@ text-align: left;
   min-width: 406px;
   font-size: 12px;
   min-width: 288px;
-  padding: 16px 32px;
+  
+  padding: 16px 20px;
 }
 @media screen and (min-width: 768px) {
   .your-service .right-sec .form-wrap form input {
     width: 100%;
     height: 68px;
     font-size: 14px;
+    padding: 16px 32px;
   }
 }
 .your-service .right-sec .form-wrap form input:first-child {
@@ -48654,7 +48659,10 @@ text-align: left;
   flex-direction: column;
   gap: 14px;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+}
+.swiper-slide-4,.swiper-slide-5{
+  width: 100%;
 }
 .everyone .swiper-slide-box {
   display: flex;
