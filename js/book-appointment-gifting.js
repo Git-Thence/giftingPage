@@ -57,6 +57,8 @@ function toggleHeaderFooter() {
 function changeStep(step) {
     activeStep.classList.remove('active');
     const tabToActivate = document.querySelector(`[data-book-tab="${step}"]`)
+    var topPos = tabToActivate.offsetTop;
+    tabToActivate.scrollTop = topPos
     tabToActivate.classList.add('active');
 
     TriggerManager();
