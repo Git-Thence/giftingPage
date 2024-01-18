@@ -29,7 +29,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .budget .showroom-swiper .slick-center .home-locations__top {
+  .budget .showroom-swiper  .home-locations__top {
     margin-top: 30px !important;
   }
   .offer-banner.your-service {
@@ -49,34 +49,34 @@
   }
 
   .home-showrooms__locations__milestone
-    .slick-active.slick-center
+    .slick-current
     .product__view {
     opacity: 1;
     color: #fff;
   }
 
-  .home-showrooms__locations__milestone li.slick-active.slick-center {
+  .home-showrooms__locations__milestone li.slick-current {
     flex: 1 0 50%;
     z-index: 1;
   }
 
   .home-showrooms__locations__milestone
-    .slick-active.slick-center
+    .slick-current
     .product__view::before,
   .home-showrooms__locations__milestone
-    .slick-active.slick-center
+    .slick-current
     .product__view::after {
     opacity: 1;
   }
 
   .home-showrooms__locations__milestone
-    .slick-active.slick-center
+    .slick-current
     .product__view::before {
     transform: scaleX(1);
   }
 
   .home-showrooms__locations__milestone
-    .slick-active.slick-center
+    .slick-current
     .product__view::after {
     transform: rotate(0deg) translateX(0px);
     animation: rotateSquare 0.3s forwards;
@@ -84,37 +84,37 @@
   }
 
   .home-showrooms__locations__milestone
-    .slick-active.slick-center
+    .slick-current
     .product__overlay {
     bottom: 0;
   }
 
-  .budget .showroom-swiper .slick-active.slick-center .product__view {
+  .budget .showroom-swiper .slick-current .product__view {
     opacity: 1;
     color: #fff;
   }
 
-  .budget .showroom-swiper li.slick-active.slick-center {
+  .budget .showroom-swiper li.slick-current {
     flex: 1 0 50%;
     z-index: 1;
   }
 
-  .budget .showroom-swiper .slick-active.slick-center .product__view::before,
-  .budget .showroom-swiper .slick-active.slick-center .product__view::after {
+  .budget .showroom-swiper .slick-current .product__view::before,
+  .budget .showroom-swiper .slick-current .product__view::after {
     opacity: 1;
   }
 
-  .budget .showroom-swiper .slick-active.slick-center .product__view::before {
+  .budget .showroom-swiper .slick-current .product__view::before {
     transform: scaleX(1);
   }
 
-  .budget .showroom-swiper .slick-active.slick-center .product__view::after {
+  .budget .showroom-swiper .slick-current .product__view::after {
     transform: rotate(0deg) translateX(0px);
     animation: rotateSquare 0.3s forwards;
     animation-delay: 0.8s;
   }
 
-  .budget .showroom-swiper .slick-active.slick-center .product__overlay {
+  .budget .showroom-swiper .slick-current .product__overlay {
     bottom: 0;
   }
 

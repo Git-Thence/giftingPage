@@ -1,26 +1,26 @@
-new Swiper(".book-app__carousel", {
-    speed: 800,
-    slidesPerView: 1,
+// new Swiper(".book-app__carousel", {
+//     speed: 800,
+//     slidesPerView: 1,
 
-    pagination: {
-        el: ".book-app-pagination",
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    effect: "creative",
-    creativeEffect: {
-        prev: {
-            scale: 1.5,
-            shadow: true,
-            translate: ["-80%", 0, -1],
-        },
-        next: {
-            translate: ["100%", 0, 100],
-        },
-    },
-});
+//     pagination: {
+//         el: ".book-app-pagination",
+//     },
+//     navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//     },
+//     effect: "creative",
+//     creativeEffect: {
+//         prev: {
+//             scale: 1.5,
+//             shadow: true,
+//             translate: ["-80%", 0, -1],
+//         },
+//         next: {
+//             translate: ["100%", 0, 100],
+//         },
+//     },
+// });
 let activeStep;
 let activeStepNumber = 1;
 function TriggerManager() {
